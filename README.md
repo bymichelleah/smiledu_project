@@ -1,4 +1,8 @@
 # 📘 SmileDu – Sistema de Gestión Académica
+<h1 align="center">
+  ¡Bienvenido(a) a mi Proyecto SMILEDU🚀!  
+  <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="30px">
+</h1>
 
 SmileDu es un sistema web desarrollado para la gestión interna de una academia educativa.  
 Permite administrar **Docentes, Alumnos, Cursos y Matrículas**, además de contar con autenticación y un dashboard con estadísticas.
@@ -48,8 +52,12 @@ Permite administrar **Docentes, Alumnos, Cursos y Matrículas**, además de cont
 - Período, fecha, teléfono y estado  
 - Cards y modales completos
 
+### Hecho por:
+- 👩‍💻 **[Michelle](https://github.com/bymichelleah)**  
+
 ---
 
-## 📁 Estructura del Proyecto
+<p align="center">✨ Desarrollado con creatividad y aura ✨</p>
+
 
 
