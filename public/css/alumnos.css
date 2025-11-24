@@ -1,0 +1,201 @@
+/*Docente Card*/
+.alumno-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 20px;
+    width: 100%;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Labels */
+.alumno-form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+/* Grupos en columnas */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Filas de inputs */
+.form-row {
+    display: flex;
+    gap: 25px;
+}
+
+/* Inputs generales */
+.alumno-form input,
+.alumno-form select {
+    /*width: 100%;*/
+    padding: 20px 10px 20px 10px;
+    border-radius: 18px;
+    border: 2px solid #dcdcdc;
+    outline: none;
+    font-size: 1em;
+    transition: all 0.2s ease;
+}
+
+/* Hover + Focus */
+.alumno-form input:focus,
+.alumno-form select:focus {
+    border-color: #000;
+}
+
+/*DOCENTE EDITARRRRRR*/
+/*Docente Card*/
+.alumno-form-editar {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 20px;
+    width: 100%;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Labels */
+.alumno-form-editar label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+/* Inputs generales */
+.alumno-form-editar input,
+.alumno-form-editar select {
+    /*width: 100%;*/
+    padding: 20px 10px 20px 10px;
+    border-radius: 18px;
+    border: 2px solid #dcdcdc;
+    outline: none;
+    font-size: 1em;
+    transition: all 0.2s ease;
+}
+
+/* Hover + Focus */
+.alumno-form-editar input:focus,
+.alumno-form-editar select:focus {
+    border-color: #000;
+}
+
+/*hasta aqui*/
+.cards-alumnos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.doc-card {
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.doc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.docente-display {
+    font-weight: 900;
+    font-size: 20px;
+}
+.doc-header .profile {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.estado.activo {
+    background: #baf8b7;
+    padding: 5px 12px;
+    border-radius: 12px;
+}
+.estado.inactivo {
+    background: #eeffa2;
+    padding: 5px 12px;
+    border-radius: 12px;
+}
+
+.btn-editar {
+    background: #000000;
+    border-radius: 20px;
+    padding: 25px 15px 25px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+}
+.btn-crear {
+    background: #000000;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+}
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+.modal-content {
+    width: 550px;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.btn-submit {
+    width: 100%;
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    padding: 25px 15px 25px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+}

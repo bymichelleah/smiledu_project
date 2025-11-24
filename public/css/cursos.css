@@ -1,0 +1,238 @@
+/* básicos */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 20px;
+}
+
+/* card del curso */
+.course-card {
+    width: 320px;
+    border: 2px solid #000;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    padding: 18px;
+}
+
+.course-card .card-header {
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+}
+
+.course-card .card-body {
+    padding: 16px;
+}
+
+.course-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.course-card .descripcion {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.course-card .docente-name {
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.badge.activo {
+    background: #baf8b7;
+}
+
+.badge.inactivo {
+    background: #ffdca8;
+}
+.curso-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 20px;
+    width: 100%;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Labels */
+.curso-form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+/* Grupos en columnas */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Filas de inputs */
+.form-row {
+    display: flex;
+    gap: 25px;
+}
+
+/* Inputs generales */
+.curso-form input,
+.curso-form select,
+.curso-form textarea {
+    /*width: 100%;*/
+    padding: 20px 10px 20px 10px;
+    border-radius: 18px;
+    border: 2px solid #dcdcdc;
+    outline: none;
+    font-size: 1em;
+    transition: all 0.2s ease;
+}
+
+/* Hover + Focus */
+.curso-form input:focus,
+.curso-form select:focus {
+    border-color: #000;
+}
+
+.btn-editar {
+    background: #000000;
+    border-radius: 20px;
+    padding: 25px 15px 25px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+}
+.btn-crear {
+    background: #000000;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    position: relative;
+    color: #ffffff;
+    font-size: 18px;
+}
+.btn-submit {
+    width: 100%;
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    padding: 25px 15px 25px 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+}
+
+.curso-form-editar {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 20px;
+    width: 100%;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Labels */
+.curso-form-editar label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+/* Inputs generales */
+.curso-form-editar input,
+.curso-form-editar select {
+    /*width: 100%;*/
+    padding: 20px 10px 20px 10px;
+    border-radius: 18px;
+    border: 2px solid #dcdcdc;
+    outline: none;
+    font-size: 1em;
+    transition: all 0.2s ease;
+}
+
+/* Hover + Focus */
+.curso-form-editar input:focus,
+.curso-form-editar select:focus {
+    border-color: #000;
+}
+
+/* botones */
+.btn-editar {
+    margin-top: 12px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* adapta responsividad */
+@media (max-width: 900px) {
+    .cards-container {
+        justify-content: center;
+    }
+}
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+.modal-content {
+    width: 550px;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    font-size: 2rem;
+}
