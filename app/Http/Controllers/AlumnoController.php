@@ -42,7 +42,7 @@ class AlumnoController extends Controller
         'estado' => 'required|in:Activo,Inactivo',
     ]);
 
-    $curso->update($request->only(['nombre','descripcion','creditos','docente_id','imagen','estado']));
+    $alumno->update($request->only(['nombre','descripcion','creditos','docente_id','imagen','estado']));
 
     return redirect()->back()->with('success','Curso actualizado correctamente');
     }

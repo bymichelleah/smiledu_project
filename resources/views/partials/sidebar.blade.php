@@ -37,7 +37,7 @@
         <form method="POST" action="{{ route('logout') }}">
             @csrf
             <button class="logout-btn">
-                <!--<img src="{{ asset('img/cerrarsesion.png') }}" class="close">-->
+                <img src="{{ asset('img/cerrarsesion.png') }}" class="close">
                  Cerrar Sesión
             </button>
         </form>
